@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsibility Simulator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div id="intro">
+      <h1>Responsibility Simulator</h1>
+      <p>Make responsible choices and see how you score. Can you handle it?</p>
+      <button onclick="startGame()">Start Game</button>
+    </div>
+
+    <div id="scenario" style="display: none;">
+      <h2 id="scenarioText"></h2>
+      <div id="choices"></div>
+      <p id="timer">Time left: <span id="time">20</span>s</p>
+    </div>
+
+    <div id="result" style="display: none;">
+      <h2>Your Responsibility Score: <span id="score"></span></h2>
+      <p id="feedback"></p>
+      <button onclick="restartGame()">Play Again</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
